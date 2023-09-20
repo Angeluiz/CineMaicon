@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMaicon - O seu cinema</title>
+    <link rel="stylesheet" href="/lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top py-2" id="cabecalho">
+        <div class="container">
+            <img src="/images/CineMaicon_Logo_2.png" alt="Logo" class="rounded">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-underline d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-play-btn"></i>
+                            O CineMaicon
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#em_cartaz" class="nav-link">
+                            <i class="bi bi-film"></i>
+                            Em cartaz
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#em_breve" class="nav-link">
+                            <i class="bi bi-calendar3"></i>
+                            Em Breve
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#salas" class="nav-link">
+                            <i class="bi bi-shop-window"></i>
+                            Nossas salas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true" id="corpo">
+        <section>
+            <div class="carousel slide text-center texto-background-preto" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="/images/cinema/cinema_1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="/images/cinema/cinema_2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="/images/cinema/cinema_3.jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/cinema/Img_fundo.webp" class="d-block w-100 rounded" alt="Foto da sala de cinema">
+                    </div>
+                    <div class="col-md-6 texto-background-preto">
+                        <h2 class="titulo">CineMaicon</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error itaque delectus, consectetur maiores sed earum deleniti animi similique esse qui impedit aperiam magnam autem pariatur dolor incidunt neque officiis.
+                        </p>
+                        <h3 class="titulo">O cinema do futuro!</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex accusamus dolorem fugiat mollitia autem ratione. Eaque fuga ipsam doloribus labore qui eligendi accusamus possimus! Ab voluptatum molestias vero maxime?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis, dolore reprehenderit error officiis explicabo laudantium autem veniam earum, deleniti molestiae est odit debitis fuga, nulla culpa eum inventore ut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="em_cartaz">
+            <div class="container">
+                <div class="row py-5">
+                    <h2 class="titulo text-center">Em Cartaz</h2>
+                </div>
+                <div class="carousel slide"  data-bs-ride="carousel" id="carousel-em-cartaz">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active " data-bs-interval="5000">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <div class="card h-100" data-bs-theme="dark">
+                                        <img src="/images/EmCartaz/Cartaz_A_Freira_2.jpg" alt="Filme A Freira 2" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="card-title">A Freira 2</h3>
+                                            <p class="card-text">Em 1956, na França, um padre é assassinado e parece que um mal está se espalhando. Determinada a deter o maligno, irmã Irene mais uma vez fica cara a cara com uma força demoníaca.</p>
+                                            <a href="#" class="btn btn-primary">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                                Compre agora
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100" data-bs-theme="dark">
+                                        <img src="/images/EmCartaz/Cartaz_Elementos.webp" alt="Filme Elementos" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Elementos</h3>
+                                            <p class="card-text">Em uma cidade onde os habitantes de fogo, água, terra e ar convivem, uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo surpreendente, porém elementar: o quanto eles têm em comum.</p>
+                                            <a href="#" class="btn btn-primary">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                                Compre agora
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100" data-bs-theme="dark">
+                                        <img src="/images/EmCartaz/Cartaz_Fale_Comigo.webp" alt="Filme Fale Comigo" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Fale Comigo</h3>
+                                            <p class="card-text">Um grupo de amigos descobre uma mão embalsamada que lhes permite conjurar espíritos. Viciado na emoção, um deles vai longe demais e abre a porta para o mundo espiritual.</p>
+                                            <a href="#" class="btn btn-primary">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                                Compre agora
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="5000">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <div class="card h-100" data-bs-theme="dark">
+                                        <img src="/images/EmCartaz/Cartaz_Noite_das_Bruxas.webp" alt="Filme Noite das Bruxas" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Noite das Bruxas</h3>
+                                            <p class="card-text">O detetive belga Hercule Poirot investiga um assassinato enquanto participa de uma sessão espírita de Halloween em um palazzo assombrado em Veneza, Itália.</p>
+                                            <a href="#" class="btn btn-primary">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                                Compre agora
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100" data-bs-theme="dark">
+                                        <img src="/images/EmCartaz/Cartaz_Oppenheimer.webp" alt="Filme Oppenheimer" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Oppenheimer</h3>
+                                            <p class="card-text">O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>
+                                            <a href="#" class="btn btn-primary">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                                Compre agora
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100" data-bs-theme="dark">
+                                        <img src="/images/EmCartaz/Cartaz_Sem_Ar.webp" alt="Filme A Freira 2" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Sem Ar</h3>
+                                            <p class="card-text">Sem Ar é um filme alemão de suspense dirigido por Maximilian Erlenwein que acompanha uma experiência desesperadora em um dia na vida das irmãs Drew (Sophie Lowe) e May (Louisa Krause). </p>
+                                            <a href="#" class="btn btn-primary">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                                Compre agora
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-em-cartaz" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-em-cartaz" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-em-cartaz" class="active" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carousel-em-cartaz" data-bs-slide-to="1"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="em_breve">
+            <div class="container">
+                <div class="row py-5">
+                    <h2 class="titulo text-center">Em Breve</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100" data-bs-theme="dark">
+                            <img src="/images/lancamento_futuro/Cartaz_Aquaman_2.jpg" alt="Filme Aquaman 2" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Aquaman 2</h3>
+                                <p class="card-text">Aquaman 2 é a sequência do filme Aquaman de 2018, que acompanha o filho do humano Tom Curry (Temuera Morrison) com a atlante Atlanna (Nicole Kidman), Arthur Curry (Jason Momoa).</p>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="bi bi-calendar-plus-fill"></i>
+                                    Pré-venda
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100" data-bs-theme="dark">
+                            <img src="/images/lancamento_futuro/Cartaz_Mercenarios_4.webp" alt="Filme Mercenarios 4" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Os Mercenarios 4</h3>
+                                <p class="card-text">A equipe enfrenta um traficante de armas que comanda um enorme exército privado. Munidos com todas as armas inimagináveis, os Mercenários são a última linha de defesa do mundo.</p>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="bi bi-calendar-plus-fill"></i>
+                                    Pré-venda
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100" data-bs-theme="dark">
+                            <img src="/images/lancamento_futuro/Cartaz_Resistencia.webp" alt="Filme Resistencia" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Resistência</h3>
+                                <p class="card-text">Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um amargurado ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA ​avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.</p>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="bi bi-calendar-plus-fill"></i>
+                                    Pré-venda
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="salas">
+            <div class="container">
+                <div class="row pt-5">
+                    <h2 class="titulo text-center">Nossas Salas</h2>
+                </div>
+                <div class="row">
+                    <h3 class="text-center texto-background-preto p-3">Conheça as nossas salas de cinema e escolha a melhor sala para voce assistir o seu filme, com todo o conforto que somente a CineMaioco pode oferecer.</h3>
+                </div>
+                <div class="row texto-background-preto p-4">
+                    <aside class="col-md-3">
+                        <nav class="nav nav-pill flex-colum" id="link-cor">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#confort_1" class="btn btn-primary fw-bold text-start nav-link active">
+                                Sala confort 1
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#confort_2" class="btn btn-primary fw-bold text-start nav-link">
+                                Sala confort 2
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#confort_3" class="btn btn-primary fw-bold text-start nav-link">
+                                Sala confort 3 XD
+                            </button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="confort_1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="tab-pane">
+                                            <img src="/images/salas/Sala_1.png" alt="Sala confort 1" class="w-100 rounded">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tab-pane">
+                                            <h4 class="fw-bold">Sala Confort 1</h4>
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quae impedit perspiciatis voluptate iure ea nemo harum molestiae! Cum fugit sit officia alias fuga beatae suscipit ipsa laboriosam nisi soluta.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis hic sequi asperiores iste facilis illum aliquam vero blanditiis consequatur non repellendus ab iure, ipsa similique deserunt quibusdam error laboriosam cumque!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="confort_2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="tab-pane">
+                                            <img src="/images/salas/Sala_2.webp" alt="Sala confort 1" class="w-100 rounded">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tab-pane">
+                                            <h4 class="fw-bold">Sala Confort 2</h4>
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quae impedit perspiciatis voluptate iure ea nemo harum molestiae! Cum fugit sit officia alias fuga beatae suscipit ipsa laboriosam nisi soluta.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis hic sequi asperiores iste facilis illum aliquam vero blanditiis consequatur non repellendus ab iure, ipsa similique deserunt quibusdam error laboriosam cumque!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="confort_3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="/images/salas/Sala_3.jpg" alt="Sala confort 1" class="w-100 rounded">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4 class="fw-bold">Sala Confort 3 XD</h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quae impedit perspiciatis voluptate iure ea nemo harum molestiae! Cum fugit sit officia alias fuga beatae suscipit ipsa laboriosam nisi soluta.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis hic sequi asperiores iste facilis illum aliquam vero blanditiis consequatur non repellendus ab iure, ipsa similique deserunt quibusdam error laboriosam cumque!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="row pt-5">
+                    <h2 class="titulo text-center">Fale conosco</h2>
+                </div>
+                <div class="row texto-background-preto p-4">
+                    <div class="col-md-7 mb-5">
+                        <form class="needs-validation" novalidate>
+                            <div class="mb-3 position-relative">
+                                <label for="nome" class="form-lable fw-bold ">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required placeholder="Maicon Cinema">
+                                <div class="invalid-tooltip">
+                                    Digite o seu nome
+                                </div>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="email" class="form-lable fw-bold ">Seu email</label>
+                                <input type="email" id="email" class="form-control" placeholder="nome@exemplo.com" required>
+                                <div class="form-text">O seu e-mail não será compartilhado com terceiros</div>
+                                <div class="invalid-tooltip">
+                                    Digite o seu email
+                                </div>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="telefone" class="form-lable fw-bold ">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="mensagem" class="form-lable fw-bold ">Seu mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                                <div class="invalid-tooltip">
+                                    Deixe uma mensagem
+                                </div>
+                            </div>
+                            <div class="form-check form-switch position-relative float-end p-5">
+                                <label class="form-check-label alert alert-primary" for="aceito-termos">Li e concordo com os termos do site / <a href="#">Leia aqui os termos</a></label>
+                                <input class="form-check-input h3" type="checkbox" id="aceito-termos" required>
+                                <div class="invalid-tooltip">
+                                    É obrigatório aceitar o termo para continuar
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success px-5 fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-2 ">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook "></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram "></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-2 ">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p class="fs-5">Rua teste exemplo 12345, Bairro Bootstrap - São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container d-flex pt-5 pb-2">
+                <p class="fw-bold">2023 &copy; CineMaicon - Todos os direitos reservados></p>
+            </div>
+        </footer>
+    
+        <div class="modal" id="mensagem-bemvindo" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Bem-vindo !!!</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Você acabou de ganhar 10% de desconto na compra de qualquer ingresso para hoje.
+                        </p>
+                        <p>
+                            Não perca está promoção !!!!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aproveitar agora</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script> <!--Chamar o script do Mask-->
+    <script src="./js/jquery.validate.min.js"></script> <!--Chamar o script do Validation-->
+    <script src="/js/main.js"></script>
+</body>
+</html>
